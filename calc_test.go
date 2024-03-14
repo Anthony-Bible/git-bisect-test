@@ -1,4 +1,4 @@
-package calculator
+package main 
 import "testing"
 
 func TestAdd(t *testing.T) {
@@ -16,5 +16,11 @@ func TestSubtract(t *testing.T) {
 func TestMultiply(t *testing.T) {
 	if result:=Multiply(2, 3); result!= 6 {
 		t.Error("2 * 3 did not equal 6, got ", result)
+	}
+}
+
+func TestDivide(t *testing.T) {
+	if result:=Divide(6, 3); result!= 2 {
+		t.Error("6 / 3 did not equal 2, got ", result)
 	}
 }
