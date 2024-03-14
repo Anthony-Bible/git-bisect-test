@@ -24,3 +24,9 @@ func TestDivide(t *testing.T) {
 		t.Error("6 / 3 did not equal 2, got ", result)
 	}
 }
+
+func TestExponent(t *testing.T) {
+	if result:=Exponent(2, 3); result!= 8 {
+		t.Error("2 ^ 3 did not equal 8, got ", result)
+	}
+}

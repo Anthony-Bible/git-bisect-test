@@ -6,6 +6,7 @@ import (
   "os"
   "strconv"
   "strings"
+  "math"
 
 )
 func Add(a, b int) int {
@@ -24,6 +25,9 @@ func Divide(a, b int) int {
 	return a / b
 }
 
+func Exponent(a, b float64) float64{
+	return math.Pow(a, b)
+}
 
 func main() {
 	if len(os.Args) != 4 {
@@ -48,6 +52,8 @@ func main() {
 		fmt.Println("Result:", Multiply(a, b))
 	case "divide":
 		fmt.Println("Result:", Divide(a, b))
+	case "exponent":
+		fmt.Println("Result:", Exponent(float64(a), float64(b)))
 	default:
 		fmt.Println("Error: Unsupported operation. Use add, subtract, multiply, or divide.")
 		os.Exit(1)
