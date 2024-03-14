@@ -12,3 +12,9 @@ func TestSubtract(t *testing.T) {
 		t.Error("2 - 1 did not equal 1, got ", result)
 	}
 }
+
+func TestMultiply(t *testing.T) {
+	if result:=Multiply(2, 3); result!= 6 {
+		t.Error("2 * 3 did not equal 6, got ", result)
+	}
+}
