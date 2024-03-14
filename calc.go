@@ -28,19 +28,11 @@ func Exponent(a, b int) int{
 	return a ^ b
 }
 
-func SquareRoot(a float64) float64{
-	return math.Sqrt(a)
-}
 
 func Modulus(a, b int) int{
 	return a % b
 }
-
 func main() {
-	if len(os.Args) != 4 {
-		fmt.Println("Usage: calc <operation> <number1> <number2>")
-		os.Exit(1)
-	}
 
 	operation := strings.ToLower(os.Args[1])
 	a, err1 := strconv.Atoi(os.Args[2] )
@@ -61,8 +53,6 @@ func main() {
 		fmt.Println("Result:", Divide(a, b))
 	case "exponent":
 		fmt.Println("Result:", Exponent(a, b))
-	case "squareroot":
-		fmt.Println("Result:", SquareRoot(float64(a)))
 	case "modulus":
 		fmt.Println("Result:", Modulus(a, b))
 	default:
