@@ -25,8 +25,9 @@ func TestDivide(t *testing.T) {
 	}
 }
 
-func TestExponent(t *testing.T) {
-	if result:=Exponent(2, 3); result!= 8 {
-		t.Error("2 ^ 3 did not equal 8, got ", result)
+
+func TestSquareRoot(t *testing.T) {
+	if result:=SquareRoot(9); result!= 3 {
+		t.Error("sqrt(9) did not equal 3, got ", result)
 	}
 }
