@@ -11,3 +11,7 @@ your mission if you choose to acceept is to find the commit that caused the bug 
 
 See if you can do all the following ways to find the bug:
 1. Using git bisect command method
+  a. Use the go run calc.go to find the bug with the exponent method for each tie
+2. use git bisect run go test ./... to find the bug
+     a. You will have to write a test for the exponent method
+     b. For every time the test fails it will auto mark it as a bad commit and if it passes it will auto mark it as a good commit then it will move to the next commit
