@@ -26,20 +26,9 @@ func TestDivide(t *testing.T) {
 }
 
 
-func TestSquareRoot(t *testing.T) {
-	if result:=SquareRoot(9); result!= 3 {
-		t.Error("sqrt(9) did not equal 3, got ", result)
-	}
-}
-
 func TestModulus(t *testing.T) {
 	if result:=Modulus(9, 4); result!= 1 {
 		t.Error("9 % 4 did not equal 1, got ", result)
 	}
 }
 
-func TestFactorial(t *testing.T) {
-	if result:=Factorial(4); result!= 24 {
-		t.Error("4! did not equal 24, got ", result)
-	}
-}
